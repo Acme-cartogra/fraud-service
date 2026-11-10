@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  title: "fraud-service"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8115"
+paths:
+  "/frauds":
+    get:
+      summary: "List frauds"
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: "Create fraud"
+      responses:
+        "200":
+          description: OK
+  "/frauds/{id}":
+    get:
+      summary: "Get fraud by ID"
+      responses:
+        "200":
+          description: OK
